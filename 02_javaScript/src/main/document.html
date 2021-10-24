@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function clickfunction() {
+            var elementobj = document.getElementById("username");
+            var stringvalue = elementobj.value;
+            var patt = /^\w{5,12}$/;
+            if(patt.test(stringvalue)){
+                alert("用户名和法");
+            }else {
+                alert('非法用户名');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id = 'username' value="wag">
+    <button onclick="clickfunction()">校验</button>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <context-param>
+        <param-name>ID</param-name>
+        <param-value>LiuBai</param-value>
+    </context-param>
+    <context-param>
+        <param-name>check</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>my.servletTest</servlet-class>
+
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>123</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet2</servlet-name>
+        <servlet-class>my.HelloServlet2</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloServlet2</servlet-name>
+        <url-pattern>/hello2.0</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyServlet3.0</servlet-name>
+        <servlet-class>my.MyServlet30</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet3.0</servlet-name>
+        <url-pattern>/hello3.0</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ContestServlet</servlet-name>
+        <servlet-class>my.ContestServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ContestServlet</servlet-name>
+        <url-pattern>/hello4.0</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyServlet1</servlet-name>
+        <servlet-class>my.O2.MyServlet1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet1</servlet-name>
+        <url-pattern>/hello1.1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyServlet2</servlet-name>
+        <servlet-class>my.O2.MyServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet2</servlet-name>
+        <url-pattern>/hello1.2</url-pattern>
+    </servlet-mapping>
+</web-app>
